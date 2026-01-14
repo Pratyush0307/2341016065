@@ -14,6 +14,9 @@ void printTable(int num, sem_t *current, sem_t *next) {
     sem_post(next);
 }
 
+
+
+
 int main() {
     sem_init(&sem1, 0, 1);
     sem_init(&sem2, 0, 0);
